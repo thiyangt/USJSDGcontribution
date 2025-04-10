@@ -16,14 +16,15 @@ library(flexdashboard)
 library(tidyverse)
 library(readr)
 library(kableExtra)
+library(gt)
 data <- readxl::read_xlsx("SDG.xlsx")
-
+data$SDG2 <- as.numeric(data$SDG2)
 
 
 data %>%
-  kable("html") %>%
-  kable_styling() %>%
-  row_spec(0, background = "lightgray")
+  kable()
+
+
 ```
 
 # Reasons for the classification

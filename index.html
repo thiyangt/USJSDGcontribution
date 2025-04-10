@@ -134,6 +134,230 @@ font-weight: 500;
 font-weight: 500;
 }
 </style>
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 <style type="text/css">
 
 .storyboard-nav button {
@@ -1930,468 +2154,1189 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="summary" class="section level1">
-<h1>Summary</h1>
+<div id="contribution-to-sdg-goals" class="section level1">
+<h1>Contribution to SDG Goals</h1>
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<table>
-<colgroup>
-<col width="0%" />
-<col width="2%" />
-<col width="25%" />
-<col width="31%" />
-<col width="19%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-<col width="1%" />
-</colgroup>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="right">ID</th>
-<th align="left">Date</th>
-<th align="left">News</th>
-<th align="left">Link</th>
-<th align="left">Faculty</th>
-<th align="left">SDG1</th>
-<th align="right">SDG2</th>
-<th align="right">SDG3</th>
-<th align="right">SDG4</th>
-<th align="left">SDG5</th>
-<th align="right">SDG6</th>
-<th align="left">SDG7</th>
-<th align="right">SDG8</th>
-<th align="right">SDG9</th>
-<th align="right">SDG10</th>
-<th align="right">SDG11</th>
-<th align="right">SDG12</th>
-<th align="right">SDG13</th>
-<th align="left">SDG14</th>
-<th align="left">SDG15</th>
-<th align="left">SDG16</th>
-<th align="right">SDG17</th>
+<tr>
+<th style="text-align:right;background-color: lightgray !important;">
+ID
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+Date
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+News
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+Link
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+Faculty
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG1
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG2
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG3
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG4
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG5
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG6
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG7
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG8
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG9
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG10
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG11
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG12
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG13
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG14
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG15
+</th>
+<th style="text-align:left;background-color: lightgray !important;">
+SDG16
+</th>
+<th style="text-align:right;background-color: lightgray !important;">
+SDG17
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="right">1</td>
-<td align="left">2024-12-31</td>
-<td align="left">MOU between the Dilmah One Earth Center, and the
-Faculty of Urban and Aquatic Bioresources of USJ</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/mou-between-the-dilmah-one-earth-center-and-the-faculty-of-urban-and-aquatic-bioresources-of-usj/" class="uri">https://www.sjp.ac.lk/news/mou-between-the-dilmah-one-earth-center-and-the-faculty-of-urban-and-aquatic-bioresources-of-usj/</a></td>
-<td align="left">Faculty of Urban and Aquatic Bioresources</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+2024-12-31
+</td>
+<td style="text-align:left;">
+MOU between the Dilmah One Earth Center, and the Faculty of Urban and
+Aquatic Bioresources of USJ
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/mou-between-the-dilmah-one-earth-center-and-the-faculty-of-urban-and-aquatic-bioresources-of-usj/" class="uri">https://www.sjp.ac.lk/news/mou-between-the-dilmah-one-earth-center-and-the-faculty-of-urban-and-aquatic-bioresources-of-usj/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Urban and Aquatic Bioresources
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
 </tr>
-<tr class="even">
-<td align="right">2</td>
-<td align="left">2024-12-30</td>
-<td align="left">USJ and Tokyo Cement (Lanka) PLC Sign MoU for
-Cutting-Edge Collaborative Research</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/usj-and-tokyo-cement-lanka-plc-sign-mou-for-cutting-edge-collaborative-research/" class="uri">https://www.sjp.ac.lk/news/usj-and-tokyo-cement-lanka-plc-sign-mou-for-cutting-edge-collaborative-research/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+2024-12-30
+</td>
+<td style="text-align:left;">
+USJ and Tokyo Cement (Lanka) PLC Sign MoU for Cutting-Edge Collaborative
+Research
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/usj-and-tokyo-cement-lanka-plc-sign-mou-for-cutting-edge-collaborative-research/" class="uri">https://www.sjp.ac.lk/news/usj-and-tokyo-cement-lanka-plc-sign-mou-for-cutting-edge-collaborative-research/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
 </tr>
-<tr class="odd">
-<td align="right">3</td>
-<td align="left">2024-12-29</td>
-<td align="left">Fungi C. manamgodae named with USJ Botany Department
-Mycologist Dr Dimuthu S. Manamgoda</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/fungi-c-manamgodae-named-with-usj-botany-department-mycologist-dr-dimuthu-s-manamgoda/" class="uri">https://www.sjp.ac.lk/news/fungi-c-manamgodae-named-with-usj-botany-department-mycologist-dr-dimuthu-s-manamgoda/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2024-12-29
+</td>
+<td style="text-align:left;">
+Fungi C. manamgodae named with USJ Botany Department Mycologist Dr
+Dimuthu S. Manamgoda
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/fungi-c-manamgodae-named-with-usj-botany-department-mycologist-dr-dimuthu-s-manamgoda/" class="uri">https://www.sjp.ac.lk/news/fungi-c-manamgodae-named-with-usj-botany-department-mycologist-dr-dimuthu-s-manamgoda/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">4</td>
-<td align="left">2024-12-28</td>
-<td align="left">Faculty of Applied Sciences Shines at CVCD Excellence
-Awards 2023</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/faculty-of-applied-sciences-shines-at-cvcd-excellence-awards-2023/" class="uri">https://www.sjp.ac.lk/news/faculty-of-applied-sciences-shines-at-cvcd-excellence-awards-2023/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+2024-12-28
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences Shines at CVCD Excellence Awards 2023
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/faculty-of-applied-sciences-shines-at-cvcd-excellence-awards-2023/" class="uri">https://www.sjp.ac.lk/news/faculty-of-applied-sciences-shines-at-cvcd-excellence-awards-2023/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="odd">
-<td align="right">5</td>
-<td align="left">2024-12-25</td>
-<td align="left">Orientation Program for 2024 Batch of External Degree
-Students of FHSS</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fhss/" class="uri">https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fhss/</a></td>
-<td align="left"> Faculty of Humanities and Social Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+2024-12-25
+</td>
+<td style="text-align:left;">
+Orientation Program for 2024 Batch of External Degree Students of FHSS
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fhss/" class="uri">https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fhss/</a>
+</td>
+<td style="text-align:left;">
+ Faculty of Humanities and Social Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">6</td>
-<td align="left">2024-12-24</td>
-<td align="left">Celebrating Excellence: Prof. Meththika Vithanage
-Receives the 2026 TWAS Award</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/celebrating-excellence-prof-meththika-vithanage-receives-the-2026-twas-award/" class="uri">https://www.sjp.ac.lk/news/celebrating-excellence-prof-meththika-vithanage-receives-the-2026-twas-award/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+2024-12-24
+</td>
+<td style="text-align:left;">
+Celebrating Excellence: Prof. Meththika Vithanage Receives the 2026 TWAS
+Award
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/celebrating-excellence-prof-meththika-vithanage-receives-the-2026-twas-award/" class="uri">https://www.sjp.ac.lk/news/celebrating-excellence-prof-meththika-vithanage-receives-the-2026-twas-award/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="odd">
-<td align="right">7</td>
-<td align="left">2024-12-23</td>
-<td align="left">Orientation Program for 2024 Batch of External Degree
-Students of FMSC</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fmsc/" class="uri">https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fmsc/</a></td>
-<td align="left">Faculties of Humanities and Social Sciences and Faculty
-of Management Studies and Commerce.</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+2024-12-23
+</td>
+<td style="text-align:left;">
+Orientation Program for 2024 Batch of External Degree Students of FMSC
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fmsc/" class="uri">https://www.sjp.ac.lk/news/orientation-program-for-2024-batch-of-external-degree-students-of-fmsc/</a>
+</td>
+<td style="text-align:left;">
+Faculties of Humanities and Social Sciences and Faculty of Management
+Studies and Commerce.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="left">2024-12-17</td>
-<td align="left">USJ Academics Shine at National Educator Awards
-2024</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/usj-academics-shine-at-national-educator-awards-2024/" class="uri">https://www.sjp.ac.lk/news/usj-academics-shine-at-national-educator-awards-2024/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+2024-12-17
+</td>
+<td style="text-align:left;">
+USJ Academics Shine at National Educator Awards 2024
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/usj-academics-shine-at-national-educator-awards-2024/" class="uri">https://www.sjp.ac.lk/news/usj-academics-shine-at-national-educator-awards-2024/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="odd">
-<td align="right">9</td>
-<td align="left">2024-12-16</td>
-<td align="left">USJ Secures Inter University Championship 2024</td>
-<td align="left"><a href="https://www.sjp.ac.lk/category/news/page/4/" class="uri">https://www.sjp.ac.lk/category/news/page/4/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2024-12-16
+</td>
+<td style="text-align:left;">
+USJ Secures Inter University Championship 2024
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/category/news/page/4/" class="uri">https://www.sjp.ac.lk/category/news/page/4/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">10</td>
-<td align="left">2024-12-15</td>
-<td align="left">Signing of the MOU between the Department of Chemistry,
-USJ and the Sri Lanka Anti-Doping Agency</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/signing-of-the-mou-between-the-department-of-chemistry-usj-and-the-sri-lanka-anti-doping-agency/" class="uri">https://www.sjp.ac.lk/news/signing-of-the-mou-between-the-department-of-chemistry-usj-and-the-sri-lanka-anti-doping-agency/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+2024-12-15
+</td>
+<td style="text-align:left;">
+Signing of the MOU between the Department of Chemistry, USJ and the Sri
+Lanka Anti-Doping Agency
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/signing-of-the-mou-between-the-department-of-chemistry-usj-and-the-sri-lanka-anti-doping-agency/" class="uri">https://www.sjp.ac.lk/news/signing-of-the-mou-between-the-department-of-chemistry-usj-and-the-sri-lanka-anti-doping-agency/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
 </tr>
-<tr class="odd">
-<td align="right">11</td>
-<td align="left">2024-12-14</td>
-<td align="left">The Academic Year 2023/24 of the FHSS at USJ Commences
-on January 6, 2025</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/the-academic-year-2023-24-of-the-fhss-at-usj-commences-on-january-6-2025/" class="uri">https://www.sjp.ac.lk/news/the-academic-year-2023-24-of-the-fhss-at-usj-commences-on-january-6-2025/</a></td>
-<td align="left"> Faculty of Humanities and Social Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+2024-12-14
+</td>
+<td style="text-align:left;">
+The Academic Year 2023/24 of the FHSS at USJ Commences on January 6,
+2025
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/the-academic-year-2023-24-of-the-fhss-at-usj-commences-on-january-6-2025/" class="uri">https://www.sjp.ac.lk/news/the-academic-year-2023-24-of-the-fhss-at-usj-commences-on-january-6-2025/</a>
+</td>
+<td style="text-align:left;">
+ Faculty of Humanities and Social Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">12</td>
-<td align="left">2024-12-13</td>
-<td align="left">Launch of Short Film: “Down the Memory Lane – to
-Japura”</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/launch-of-short-film-down-the-memory-lane-to-japura/" class="uri">https://www.sjp.ac.lk/news/launch-of-short-film-down-the-memory-lane-to-japura/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+2024-12-13
+</td>
+<td style="text-align:left;">
+Launch of Short Film: “Down the Memory Lane – to Japura”
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/launch-of-short-film-down-the-memory-lane-to-japura/" class="uri">https://www.sjp.ac.lk/news/launch-of-short-film-down-the-memory-lane-to-japura/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="odd">
-<td align="right">13</td>
-<td align="left">2024-12-12</td>
-<td align="left">Department of Chemistry, USJ Shines at SLAAS
-Inter-University Undergraduate Poster &amp; Quiz Competition 2024</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/department-of-chemistry-usj-shines-at-slaas-inter-university-undergraduate-poster-quiz-competition-2024/" class="uri">https://www.sjp.ac.lk/news/department-of-chemistry-usj-shines-at-slaas-inter-university-undergraduate-poster-quiz-competition-2024/</a></td>
-<td align="left">Faculty of Applied Sciences</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+2024-12-12
+</td>
+<td style="text-align:left;">
+Department of Chemistry, USJ Shines at SLAAS Inter-University
+Undergraduate Poster &amp; Quiz Competition 2024
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/department-of-chemistry-usj-shines-at-slaas-inter-university-undergraduate-poster-quiz-competition-2024/" class="uri">https://www.sjp.ac.lk/news/department-of-chemistry-usj-shines-at-slaas-inter-university-undergraduate-poster-quiz-competition-2024/</a>
+</td>
+<td style="text-align:left;">
+Faculty of Applied Sciences
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">14</td>
-<td align="left">2024-12-08</td>
-<td align="left">Launch of 2024 USJ – Innovation Grants by the
-Innovation, Invention, and Venture Creation Council (IIVCC)</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/launch-of-2024-usj-innovation-grants-by-the-innovation-invention-and-venture-creation-council-iivcc/" class="uri">https://www.sjp.ac.lk/news/launch-of-2024-usj-innovation-grants-by-the-innovation-invention-and-venture-creation-council-iivcc/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2024-12-08
+</td>
+<td style="text-align:left;">
+Launch of 2024 USJ – Innovation Grants by the Innovation, Invention, and
+Venture Creation Council (IIVCC)
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/launch-of-2024-usj-innovation-grants-by-the-innovation-invention-and-venture-creation-council-iivcc/" class="uri">https://www.sjp.ac.lk/news/launch-of-2024-usj-innovation-grants-by-the-innovation-invention-and-venture-creation-council-iivcc/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="odd">
-<td align="right">15</td>
-<td align="left">2024-12-06</td>
-<td align="left">University of Sri Jayewardenepura Clinches the Silver
-Award in Best Annual Reports and Accounts Competition (BARA) -2023</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/university-of-sri-jayewardenepura-clinches-the-silver-award-in-best-annual-reports-and-accounts-competition-bara-2023/" class="uri">https://www.sjp.ac.lk/news/university-of-sri-jayewardenepura-clinches-the-silver-award-in-best-annual-reports-and-accounts-competition-bara-2023/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+2024-12-06
+</td>
+<td style="text-align:left;">
+University of Sri Jayewardenepura Clinches the Silver Award in Best
+Annual Reports and Accounts Competition (BARA) -2023
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/university-of-sri-jayewardenepura-clinches-the-silver-award-in-best-annual-reports-and-accounts-competition-bara-2023/" class="uri">https://www.sjp.ac.lk/news/university-of-sri-jayewardenepura-clinches-the-silver-award-in-best-annual-reports-and-accounts-competition-bara-2023/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
-<tr class="even">
-<td align="right">16</td>
-<td align="left">2024-12-02</td>
-<td align="left">USJ Celebrates Research Excellence at Annual Awards
-Ceremony 2024</td>
-<td align="left"><a href="https://www.sjp.ac.lk/news/usj-celebrates-research-excellence-at-annual-awards-ceremony-2024/" class="uri">https://www.sjp.ac.lk/news/usj-celebrates-research-excellence-at-annual-awards-ceremony-2024/</a></td>
-<td align="left">University</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
-<td align="right">1</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
-<td align="right">NA</td>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+2024-12-02
+</td>
+<td style="text-align:left;">
+USJ Celebrates Research Excellence at Annual Awards Ceremony 2024
+</td>
+<td style="text-align:left;">
+<a href="https://www.sjp.ac.lk/news/usj-celebrates-research-excellence-at-annual-awards-ceremony-2024/" class="uri">https://www.sjp.ac.lk/news/usj-celebrates-research-excellence-at-annual-awards-ceremony-2024/</a>
+</td>
+<td style="text-align:left;">
+University
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="reason-for-the-classification" class="section level1">
-<h1>Reason for the classification</h1>
+<div id="reasons-for-the-classification" class="section level1">
+<h1>Reasons for the classification</h1>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
 </div>
 
 </div>

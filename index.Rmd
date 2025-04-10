@@ -10,13 +10,23 @@ output:
 library(flexdashboard)
 ```
 
-# Summary
+# Contribution to SDG Goals
 
 ```{r}
 library(tidyverse)
 library(readr)
+library(kableExtra)
 data <- readxl::read_xlsx("SDG.xlsx")
-data |> knitr::kable()
+
+
+
+data %>%
+  kable("html") %>%
+  kable_styling() %>%
+  row_spec(0, background = "lightgray")
 ```
 
-# Reason for the classification
+# Reasons for the classification
+
+# Summary
+

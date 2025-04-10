@@ -10,27 +10,13 @@ output:
 library(flexdashboard)
 ```
 
-Column {data-width=650}
------------------------------------------------------------------------
-
-### Chart A
+# Summary
 
 ```{r}
-
+library(tidyverse)
+library(readr)
+data <- readxl::read_xlsx("SDG.xlsx")
+data |> knitr::kable()
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-
-```
-
-### Chart C
-
-```{r}
-
-```
-
+# Reason for the classification

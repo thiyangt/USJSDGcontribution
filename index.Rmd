@@ -28,8 +28,12 @@ data_clean <- data %>%
 
 #https://gist.github.com/dkdndes/7dd37498225a0461f7f52682137791c4
 data_clean %>%
-  kbl(booktabs = TRUE, linesep = "", escape = TRUE) %>%
-  kable_paper(full_width = FALSE) %>%
+ # kbl(booktabs = TRUE, linesep = "", escape = TRUE) %>%
+  #kable() %>%
+ # kable_paper(full_width = FALSE) %>%
+   kable("html", escape = F) %>%
+ kable_styling(bootstrap_options = c("striped", "condensed","hover")) %>%
+ scroll_box(height = "1000px") %>%
   column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) 
 
 ```

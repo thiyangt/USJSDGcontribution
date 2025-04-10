@@ -22,9 +22,26 @@ data <- readxl::read_xlsx("SDG.xlsx")
 data$SDG2 <- as.numeric(data$SDG2)
 
 
-data %>%
-  kable()
 
+data_clean <- data %>%
+  mutate(SDG2 = ifelse(is.na(SDG2), 0, SDG2))  
+
+#https://gist.github.com/dkdndes/7dd37498225a0461f7f52682137791c4
+data_clean %>%
+  kbl(booktabs = TRUE, linesep = "", escape = TRUE) %>%
+  kable_paper(full_width = FALSE) %>%
+  column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) %>%
+  # Add custom CSS to make the table scrollable
+  add_header_above(c(" " = 7)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  row_spec(0, background = "#f2f2f2") %>%
+  # Apply scrollable container
+  htmltools::browsable(
+    htmltools::tags$div(
+      style = "overflow-y: scroll; height: 400px;",
+      .
+    )
+  )
 
 ```
 

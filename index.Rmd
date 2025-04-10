@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+css: s.css
 ---
 
 ```{r setup, include=FALSE}
@@ -97,68 +98,85 @@ data %>%
 
 
 ### NEWS 3
-SDG 2: Zero Hunger
+
+**SDG 2: Zero Hunger**
+
 •	Understanding plant pathogenic fungi such as Curvularia contributes to better crop protection and food security, particularly for important crops like sugarcane.
+
 •	Taxonomic clarity enables early identification and control of diseases, helping to minimize crop losses and increase agricultural productivity.
-________________________________________
-🧬 SDG 9: Industry, Innovation, and Infrastructure
+
+**SDG 9: Industry, Innovation, and Infrastructure**
+
 •	Dr. Manamgoda’s innovative research in fungal taxonomy supports scientific infrastructure and innovation in the agricultural biotechnology and plant pathology sectors.
-________________________________________
-🌱 SDG 12: Responsible Consumption and Production
+
+**SDG 12: Responsible Consumption and Production**
+
 •	Accurate identification of plant pathogens supports sustainable farming practices, reducing the overuse of fungicides and promoting targeted disease management.
-________________________________________
-🧠 SDG 4: Quality Education
+
+**SDG 4: Quality Education**
+
 •	As a Senior Lecturer, Dr. Manamgoda’s international recognition contributes to research excellence, inspiring students and early-career scientists to pursue careers in mycology and plant sciences.
-________________________________________
-🌍 SDG 17: Partnerships for the Goals
+
+**SDG 17: Partnerships for the Goals**
+
 •	The species discovery, resulting from international collaboration among scientists from Sri Lanka, China, and Thailand, highlights the importance of global scientific networks in biodiversity and agricultural research.
 
 
+### NEWS 4
 
-NEWS 4
-SDG 4: Quality Education
+** SDG 4: Quality Education**
+
 •	Their recognitions highlight academic excellence and world-class research, strengthening the quality and reputation of higher education and scientific training in Sri Lanka.
-________________________________________
-🔬 SDG 9: Industry, Innovation, and Infrastructure
+
+
+**SDG 9: Industry, Innovation, and Infrastructure**
+
 •	Dr. Munaweera’s innovations in research and development directly contribute to technological progress and the national innovation ecosystem, promoting applied science that supports industry needs.
 
-NEWS 5
+### NEWS 5
 
-SDG 4: Quality Education
+**SDG 4: Quality Education**
+
 •	The event supports inclusive, equitable, and lifelong learning opportunities by enabling access to higher education through external degree programs.
+
 •	It empowers students who may not be able to attend on-campus programs—promoting flexibility and accessibility in tertiary education.
-________________________________________
-🤝 SDG 10: Reduced Inequalities
+
+
+
+**SDG 10: Reduced Inequalities**
+
 •	By offering external degrees across diverse disciplines, the university helps bridge educational gaps for rural, working, and non-traditional students, reducing inequality in access to quality education.
 
 
 
+### NEWS 6
 
+**SDG 13: Climate Action**
 
-
-NEWS 6
-
-🌱 SDG 13: Climate Action
 •	Her work on biochar and nano biochar plays a critical role in carbon sequestration, mitigating climate change, and enhancing climate resilience through sustainable environmental remediation.
-________________________________________
-🌍 SDG 12: Responsible Consumption and Production
+
+**SDG 12: Responsible Consumption and Production**
+
 •	Transforming biological waste into high-value environmental solutions directly supports sustainable production systems and promotes waste-to-resource innovations.
-________________________________________
-🌊 SDG 6: Clean Water and Sanitation
+
+
+**SDG 6: Clean Water and Sanitation**
+
 •	Her research on biochar applications includes removing contaminants from water and soil, contributing to improved water quality and sanitation infrastructure.
-________________________________________
-🧪 SDG 9: Industry, Innovation and Infrastructure (through research translation)
+
+**SDG 9: Industry, Innovation and Infrastructure (through research translation)**
+
 •	The innovative use of nano-technological solutions in environmental science reflects high-impact scientific and technological progress for sustainable development.
-________________________________________
-🎓 SDG 4: Quality Education
+
+**SDG 4: Quality Education**
+
 •	As a professor and researcher, her contributions also strengthen research capacity in higher education, promoting scientific excellence and mentorship in the Global South.
 
 
+### NEWS 7
 
+**SDG 4: Quality Education
 
-NEWS 7
-
-SDG 4: Quality Education
 •	The program supports inclusive, equitable, and accessible education, providing students with the tools, guidance, and resources to pursue higher education, regardless of their geographical or professional constraints.
 ________________________________________
 🤝 SDG 10: Reduced Inequality

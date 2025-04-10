@@ -30,18 +30,7 @@ data_clean <- data %>%
 data_clean %>%
   kbl(booktabs = TRUE, linesep = "", escape = TRUE) %>%
   kable_paper(full_width = FALSE) %>%
-  column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) %>%
-  # Add custom CSS to make the table scrollable
-  add_header_above(c(" " = 7)) %>%
-  kable_styling(bootstrap_options = c("striped", "hover")) %>%
-  row_spec(0, background = "#f2f2f2") %>%
-  # Apply scrollable container
-  htmltools::browsable(
-    htmltools::tags$div(
-      style = "overflow-y: scroll; height: 400px;",
-      .
-    )
-  )
+  column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) 
 
 ```
 
@@ -49,7 +38,7 @@ data_clean %>%
 
 **Select the news item with its ID in panel 1**
 
-### NEWS 1
+#### **NEWS 1**
 
 **SDG 4: Quality Education**
 
@@ -83,7 +72,7 @@ data_clean %>%
 •	Encourages knowledge exchange and capacity building between institutions.
 
 
-### NEWS 2
+#### NEWS 2
 
 **SDG 9: Industry, Innovation, and Infrastructure**
 
@@ -114,7 +103,7 @@ data_clean %>%
 •	Strengthens multi-stakeholder partnerships focused on innovation and sustainable development.
 
 
-### NEWS 3
+#### NEWS 3
 
 **SDG 2: Zero Hunger**
 
@@ -139,7 +128,7 @@ data_clean %>%
 •	The species discovery, resulting from international collaboration among scientists from Sri Lanka, China, and Thailand, highlights the importance of global scientific networks in biodiversity and agricultural research.
 
 
-### NEWS 4
+#### NEWS 4
 
 ** SDG 4: Quality Education**
 
@@ -150,7 +139,7 @@ data_clean %>%
 
 •	Dr. Munaweera’s innovations in research and development directly contribute to technological progress and the national innovation ecosystem, promoting applied science that supports industry needs.
 
-### NEWS 5
+#### NEWS 5
 
 **SDG 4: Quality Education**
 
@@ -166,7 +155,7 @@ data_clean %>%
 
 
 
-### NEWS 6
+#### NEWS 6
 
 **SDG 13: Climate Action**
 
@@ -190,7 +179,7 @@ data_clean %>%
 •	As a professor and researcher, her contributions also strengthen research capacity in higher education, promoting scientific excellence and mentorship in the Global South.
 
 
-### NEWS 7
+#### **NEWS 7**
 
 **SDG 4: Quality Education
 

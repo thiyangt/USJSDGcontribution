@@ -19,23 +19,96 @@ library(readr)
 library(kableExtra)
 library(gt)
 data <- readxl::read_xlsx("SDG.xlsx")
+data$SDG1 <- as.numeric(data$SDG1)
 data$SDG2 <- as.numeric(data$SDG2)
-
+data$SDG3 <- as.numeric(data$SDG3)
+data$SDG4 <- as.numeric(data$SDG4)
+data$SDG5 <- as.numeric(data$SDG5)
+data$SDG6 <- as.numeric(data$SDG6)
+data$SDG7 <- as.numeric(data$SDG7)
+data$SDG8 <- as.numeric(data$SDG8)
+data$SDG9 <- as.numeric(data$SDG9)
+data$SDG10 <- as.numeric(data$SDG10)
+data$SDG11 <- as.numeric(data$SDG11)
+data$SDG12 <- as.numeric(data$SDG12)
+data$SDG13 <- as.numeric(data$SDG13)
+data$SDG14 <- as.numeric(data$SDG14)
+data$SDG15 <- as.numeric(data$SDG15)
+data$SDG16 <- as.numeric(data$SDG16)
+data$SDG17 <- as.numeric(data$SDG17)
 
 
 data_clean <- data %>%
-  mutate(SDG2 = ifelse(is.na(SDG2), 0, SDG2))  
+  mutate(SDG1 = ifelse(is.na(SDG1), 0, SDG1),
+         SDG2 = ifelse(is.na(SDG2), 0, SDG2),
+         SDG3 = ifelse(is.na(SDG3), 0, SDG3),
+         SDG4 = ifelse(is.na(SDG4), 0, SDG4),
+         SDG5 = ifelse(is.na(SDG5), 0, SDG5),
+         SDG6 = ifelse(is.na(SDG6), 0, SDG6),
+         SDG7 = ifelse(is.na(SDG7), 0, SDG7),
+         SDG8 = ifelse(is.na(SDG8), 0, SDG8),
+         SDG9 = ifelse(is.na(SDG9), 0, SDG9),
+         SDG10 = ifelse(is.na(SDG10), 0, SDG10),
+         SDG11 = ifelse(is.na(SDG11), 0, SDG11),
+         SDG12 = ifelse(is.na(SDG12), 0, SDG12),
+         SDG13 = ifelse(is.na(SDG13), 0, SDG13),
+         SDG14 = ifelse(is.na(SDG14), 0, SDG14),
+         SDG15 = ifelse(is.na(SDG15), 0, SDG15),
+         SDG16 = ifelse(is.na(SDG16), 0, SDG16),
+         SDG17 = ifelse(is.na(SDG17), 0, SDG17))  
 
 #https://gist.github.com/dkdndes/7dd37498225a0461f7f52682137791c4
 data_clean %>%
- # kbl(booktabs = TRUE, linesep = "", escape = TRUE) %>%
-  #kable() %>%
- # kable_paper(full_width = FALSE) %>%
-   kable("html", escape = F) %>%
+ kable("html", escape = F) %>%
  kable_styling(bootstrap_options = c("striped", "condensed","hover")) %>%
  scroll_box(height = "1000px") %>%
-  column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) 
+  column_spec(6, background = ifelse(data_clean$SDG1 > 0, "#E5233D", "white")) %>%
+  column_spec(7, background = ifelse(data_clean$SDG2 > 0, "#DDA73A", "white")) %>% column_spec(8, background = ifelse(data_clean$SDG3 > 0, "#4CA146", "white"))  %>% 
+  column_spec(9, background = ifelse(data_clean$SDG4 > 0, "#C5192D", "white"))  %>% 
+  column_spec(10, background = ifelse(data_clean$SDG5 > 0, "#EF402C", "white")) %>% 
+  column_spec(11, background = ifelse(data_clean$SDG6 > 0, "#27BFE6", "white"))  %>% 
+  column_spec(12, background = ifelse(data_clean$SDG7 > 0, "#FBC412", "white"))  %>% 
+  column_spec(13, background = ifelse(data_clean$SDG8 > 0, "#A31C44", "white")) %>% column_spec(14, background = ifelse(data_clean$SDG9 > 0, "#F26A2D", "white"))  %>% 
+  column_spec(15, background = ifelse(data_clean$SDG10 > 0, "#E01483", "white"))%>% 
+  column_spec(16, background = ifelse(data_clean$SDG11 > 0, "#F89D2A", "white"))%>% 
+  column_spec(17, background = ifelse(data_clean$SDG12 > 0, "#BF8D2C", "white"))%>% column_spec(18, background = ifelse(data_clean$SDG13 > 0, "#407F46", "white"))  %>% column_spec(19, background = ifelse(data_clean$SDG14 > 0, "#1F97D4", "white"))  %>% column_spec(20, background = ifelse(data_clean$SDG15 > 0, "#59BA48", "white"))%>% column_spec(21, background = ifelse(data_clean$SDG16 > 0, "#126A9F", "white"))  %>% column_spec(22, background = ifelse(data_clean$SDG17 > 0, "#13496B", "white")) 
 
+ 
+```
+
+# Number of NEWS items contributed to each SDG
+
+```{r}
+library(plotly)
+p1 <- data_clean |>
+  select(6:22) |>
+  pivot_longer( SDG1:SDG17,names_to = "SDG", values_to = "Count") |>
+  mutate(SDG=factor(SDG, levels=c("SDG1", "SDG2", "SDG3", "SDG4",
+                                  "SDG5", "SDG6", "SDG7", "SDG8",
+                                  "SDG9", "SDG10", "SDG11", "SDG12",
+                                  "SDG13", "SDG14", "SDG15", "SDG16",
+                                  "SDG17"),
+                    labels =c("SDG1-No Poverty", 
+                                  "SDG2-Zero Hunger", 
+                                  "SDG3-Good Health",
+                                  "SDG4-Quality Education",
+                                  "SDG5-Gender Equality",
+                                  "SDG6-Clean Water", 
+                                  "SDG7-Affordable Energy",
+                                  "SDG8-Decent Work",
+                                  "SDG9-Industru, Innovation, Infrastructure", 
+                                  "SDG10-Reduced Inequality", 
+                                  "SDG11-Sustainable Cities", 
+                                  "SDG12-Responsible Consumption",
+                                  "SDG13-Climate Action", 
+                                  "SDG14-Life Below Water", 
+                                  "SDG15-Life on Land", 
+                                  "SDG16-Peace & Justice",
+                                  "SDG17-Partnerships"))) |>
+  group_by(SDG) |>
+  summarize(Count = sum(Count)) |>
+  ggplot(aes(y=SDG, x=Count)) + geom_col() + xlab("Number of NEWS items contributed to each goal") 
+ggplotly(p1)
 ```
 
 # Reasons for the classification
@@ -76,7 +149,7 @@ data_clean %>%
 •	Encourages knowledge exchange and capacity building between institutions.
 
 
-#### NEWS 2
+#### **NEWS 2**
 
 **SDG 9: Industry, Innovation, and Infrastructure**
 
@@ -107,7 +180,7 @@ data_clean %>%
 •	Strengthens multi-stakeholder partnerships focused on innovation and sustainable development.
 
 
-#### NEWS 3
+#### **NEWS 3**
 
 **SDG 2: Zero Hunger**
 
@@ -132,7 +205,7 @@ data_clean %>%
 •	The species discovery, resulting from international collaboration among scientists from Sri Lanka, China, and Thailand, highlights the importance of global scientific networks in biodiversity and agricultural research.
 
 
-#### NEWS 4
+#### **NEWS 4**
 
 ** SDG 4: Quality Education**
 
@@ -143,7 +216,7 @@ data_clean %>%
 
 •	Dr. Munaweera’s innovations in research and development directly contribute to technological progress and the national innovation ecosystem, promoting applied science that supports industry needs.
 
-#### NEWS 5
+#### **NEWS 5**
 
 **SDG 4: Quality Education**
 
@@ -159,7 +232,7 @@ data_clean %>%
 
 
 
-#### NEWS 6
+#### **NEWS 6**
 
 **SDG 13: Climate Action**
 
@@ -185,99 +258,113 @@ data_clean %>%
 
 #### **NEWS 7**
 
-**SDG 4: Quality Education
+**SDG 4: Quality Education**
 
 •	The program supports inclusive, equitable, and accessible education, providing students with the tools, guidance, and resources to pursue higher education, regardless of their geographical or professional constraints.
-________________________________________
-🤝 SDG 10: Reduced Inequality
+
+**SDG 10: Reduced Inequality**
+
 •	By offering external degree programs, the university helps bridge the education gap for working professionals and individuals who may not have access to traditional, on-campus education, fostering social inclusion.
-________________________________________
-💼 SDG 8: Decent Work and Economic Growth
+
+**SDG 8: Decent Work and Economic Growth**
+
 •	The external degree programs contribute to developing skills and empowering students, enhancing their qualifications and employability, thus fostering economic opportunities and supporting workforce development.
-________________________________________
-🌍 SDG 9: Industry, Innovation, and Infrastructure
+
+**SDG 9: Industry, Innovation, and Infrastructure**
+
 •	The university’s efforts to expand accessible higher education through external programs help to create a strong educational infrastructure, driving innovation and research within the academic and professional sectors.
 
 
 
-
-
-
-
-NEWS 8
+#### **NEWS 8**
 
 SDG 4: Quality Education
 •	The recognition of Professor Charmalie Nahallage and Professor B.G.D. Nissanka K. de Silva underscores their dedication to teaching excellence and research, which contribute to improving educational standards and learning outcomes across Sri Lanka.
 
-NEWS 9
+#### **NEWS 9**
 
-SDG 3: Good Health and Well-being
+**SDG 3: Good Health and Well-being**
+
 •	USJ's dominance in sports reflects the university’s commitment to fostering physical health and well-being among students. It encourages active lifestyles, teamwork, and discipline, promoting mental and physical wellness across the student body.
-________________________________________
-🤝 SDG 4: Quality Education
+
+**SDG 4: Quality Education**
+
 •	By excelling in university sports, USJ emphasizes the importance of holistic development—blending academic achievement with physical and mental growth. This reinforces the value of a well-rounded education, where sports play an essential role in student developmen
 
-NEWS 10
+#### **NEWS 10**
 
 SDG 3: Good Health and Well-being
+
 •	The collaboration aims to promote fair play and ethical behavior in sports while raising awareness about prohibited substances. By educating young athletes about the risks of doping and promoting safe, clean sports practices, this initiative supports the health and well-being of athletes and the broader sports community in Sri Lanka.
-________________________________________
-📚 SDG 4: Quality Education
+
+SDG 4: Quality Education
+
 •	The joint research initiative between the university and SLADA will create opportunities for undergraduate and postgraduate students to gain hands-on experience in sports medicine and analytical sciences, enhancing their skills and preparing them for careers in these critical fields. This initiative contributes to high-quality education by providing practical learning experiences and fostering interdisciplinary research in emerging fields.
-________________________________________
+
+
 🌍 SDG 17: Partnerships for the Goals
+
 •	The signing of the Memorandum of Understanding (MOU) highlights the importance of collaborative partnerships between academic institutions and national organizations like SLADA. This partnership helps align the resources and expertise of both parties to promote research and education that addresses key global and national challenges, such as ethical sports practices and the prevention of doping.
-________________________________________
+
+
 ⚖️ SDG 10: Reduced Inequality
+
 •	By increasing awareness and educating athletes, especially young ones, about prohibited substances and doping prevention, this initiative helps reduce inequalities in sports. It ensures that all athletes, regardless of their background, have the same access to education on fair play, promoting equity in sports.
 
 
-NEWS 11
+#### **NEWS 11**
+
 •  SDG 4: Quality Education:
+
 This structured and comprehensive orientation program ensures that new students are equipped with the necessary information and resources to succeed academically. By making information accessible online and ensuring in-person participation, the university fosters inclusive and quality education for all students, providing them with the foundation for a successful academic career.
+
 •  SDG 10: Reduced Inequality:
 The online orientation phase makes it easier for students to access important information regardless of their geographic location, reducing barriers and ensuring equal access to educational resources.
-NEWS 12
+
+#### **NEWS 12**
+
 •  SDG 4: Quality Education:
 The production of this short film not only provides an excellent learning opportunity for the 4th-year undergraduates but also promotes creativity and artistic expression. Through this collaborative project, students were able to develop important skills in filmmaking, storytelling, and digital media production, contributing to the development of well-rounded, skilled individuals.
+
 •  SDG 9: Industry, Innovation, and Infrastructure:
 The project fosters innovation within the university's academic environment by encouraging students to explore creative industries like film and media. By involving digital media in a collaborative project, the university is contributing to building technological and creative infrastructure.
+
 •  SDG 11: Sustainable Cities and Communities:
 The film explores the university's legacy, highlighting its role in creating a sense of community among students, staff, and alumni. The event brought together individuals across generations, enhancing the sense of belonging and pride within the university, thereby supporting inclusive communities.
+
 •  SDG 10: Reduced Inequality:
 The involvement of students from diverse backgrounds in the creation of this film and the interactive session after the screening allowed for equal participation and fostered inclusive cultural exchange, thus reducing inequalities among students and alumni from different cohorts and demographics.
 
-NEWS 13
+#### **NEWS 13**
 
 SDG 4: Quality Education:
 The winning team at the SLAAS Inter-University Undergraduate Poster Competition and the First Runner-Up position at the SLAAS Chemistry Quiz showcase the academic excellence of the undergraduates from the Department of Chemistry. These achievements reflect the university's focus on quality education by nurturing students' critical thinking, problem-solving abilities, and in-depth knowledge in various branches of chemistry. This recognition promotes academic innovation, encouraging students to engage with interdisciplinary themes such as green chemistry and environmental science.
 
-NEWS 14
+#### **NEWS 14**
 
 SDG 4: Quality Education
 •	The USJ Innovation Grants encourage innovative research and the development of creative solutions, directly supporting quality education at all levels. By offering this grant opportunity to students, academics, and researchers, the program fosters an environment where knowledge is not only acquired but also applied to real-world challenges, strengthening the quality of education at the university.
 
 SDG 8: Decent Work and Economic Growth
 •	Students and researchers will be able to translate their creative ideas into tangible business or technological models, ultimately contributing to the local economy and promoting decent work and job opportunities.
+
 SDG 9: Industry, Innovation, and Infrastructure
 •	The program promotes research and innovation. By supporting projects that can turn ideas into practical solutions, the program encourages the development of new industries and technological advancements.
 
-NEWS 15
+#### **NEWS 15**
 
-The University of Sri Jayewardenepura's achievement in winning the Silver Award at the Best Annual Reports and Accounts competition directly contributes to SDG 8: Decent Work and Economic Growth in several important ways:
+SDG 8: Decent Work and Economic Growth in several important ways:
 1.	Promoting Transparency and Accountability in Financial Reporting: The university’s commitment to excellence in financial reporting ensures transparency and accountability, key elements for fostering an environment conducive to economic growth. Transparent financial management builds trust and confidence, which is essential for creating a stable and reliable economy. By consistently demonstrating financial accountability, the university contributes to fostering a culture of responsible economic practices, encouraging sustainable growth.
 2.	Supporting Institutional Strength and Sustainability: The theme of "Sustainable Success" highlights the university’s dedication to ensuring long-term financial health and stability despite economic challenges. This aligns with the SDG target of promoting sustained, inclusive, and sustainable economic growth. By maintaining financial sustainability, the university contributes to fostering an environment that supports future growth and resilience, which is fundamental for economic progress.
 3.	Encouraging Good Governance: The competition recognizes institutions for their adherence to good governance practices in financial reporting. By prioritizing governance standards, the University of Sri Jayewardenepura helps set a precedent for other institutions to follow, contributing to a wider societal commitment to fairness and ethical practices in business and governance. Good governance underpins a robust economy by ensuring that institutions remain accountable to their stakeholders.
-NEWS 16
+
+#### **NEWS 16**
 
 SDG 4: Quality Education
 The ceremony highlights the university's commitment to fostering research excellence and improving academic outcomes across various disciplines. By recognizing the achievements of researchers and encouraging early career academics, USJ supports the development of high-quality education and provides an environment where academic inquiry thrives. The focus on research, publications, and innovation directly contributes to the availability of knowledge and the advancement of learning opportunities for students, faculty, and researchers.
+
 SDG 9: Industry, Innovation, and Infrastructure
 The recognition of groundbreaking research and innovation in diverse fields strengthens the university's role as a hub of knowledge production. This aligns with SDG 9 by fostering innovation and supporting the development of infrastructure that promotes sustainable industries.
 
 
-
-
-
-# Summary
 

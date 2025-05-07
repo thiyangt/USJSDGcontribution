@@ -96,7 +96,7 @@ p1 <- data_clean |>
                                   "SDG6-Clean Water", 
                                   "SDG7-Affordable Energy",
                                   "SDG8-Decent Work",
-                                  "SDG9-Industru, Innovation, Infrastructure", 
+                                  "SDG9-Industry, Innovation, Infrastructure", 
                                   "SDG10-Reduced Inequality", 
                                   "SDG11-Sustainable Cities", 
                                   "SDG12-Responsible Consumption",
